@@ -8,10 +8,10 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "~> 4.1.0"
+gem "rails", "~> 4.1.9"
 
 # Make links from text
-gem 'rails_autolink', '~> 1.1'
+gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
 
 # Default values for AR models
 gem "default_value_for", "~> 3.0.0"
@@ -75,7 +75,7 @@ gem "haml-rails"
 gem "carrierwave"
 
 # Drag and Drop UI
-gem 'dropzonejs-rails'
+gem 'dropzonejs-rails', '>= 0.4.14'
 
 # for aws storage
 gem "fog", "~> 1.14"
@@ -181,7 +181,7 @@ gem 'mousetrap-rails'
 # Detect and convert string character encoding
 gem 'charlock_holmes'
 
-gem "sass-rails", '~> 4.0.2'
+gem "sass-rails", "~> 4.0.5"
 gem "coffee-rails"
 gem "uglifier"
 gem 'turbolinks'
@@ -252,7 +252,7 @@ group :development, :test do
   gem 'poltergeist', '~> 1.5.1'
 
   gem 'jasmine', '~> 2.2.0'
-  gem 'jasmine-rails'
+  gem 'jasmine-rails', '>= 0.10.8'
 
   gem "spring", '~> 1.3.1'
   gem "spring-commands-rspec", '1.0.4'
