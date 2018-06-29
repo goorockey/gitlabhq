@@ -240,13 +240,13 @@ group :development, :test do
   gem "ffaker"
 
   # Guard
-  gem 'guard-rspec'
-  gem 'guard-spinach'
+  gem 'guard-rspec', '>= 4.2.0'
+  gem 'guard-spinach', '>= 0.0.2'
 
   # Notification
   gem 'rb-fsevent', require: darwin_only('rb-fsevent')
   gem 'growl',      require: darwin_only('growl')
-  gem 'rb-inotify', require: linux_only('rb-inotify')
+  gem 'rb-inotify', '0.9.5'
 
   # PhantomJS driver for Capybara
   gem 'poltergeist', '~> 1.5.1'
