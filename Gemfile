@@ -54,7 +54,7 @@ gem 'gollum-lib', '~> 4.0.2'
 gem "gitlab-linguist", "~> 3.0.1", require: "linguist"
 
 # API
-gem "grape", "~> 0.6.1"
+gem "grape", "~> 1.1.0"
 gem "grape-entity", "~> 0.4.2"
 gem 'rack-cors', require: 'rack/cors'
 
