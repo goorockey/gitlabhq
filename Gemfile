@@ -190,7 +190,7 @@ gem 'jquery-turbolinks'
 gem 'select2-rails'
 gem 'jquery-atwho-rails', '~> 1.0.0'
 gem "jquery-rails"
-gem "jquery-ui-rails"
+gem "jquery-ui-rails", ">= 6.0.0"
 gem "jquery-scrollto-rails"
 gem "raphael-rails", "~> 2.1.2"
 gem 'bootstrap-sass', '~> 3.0'
