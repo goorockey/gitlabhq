@@ -8,10 +8,10 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem "rails", "~> 4.1.0"
+gem "rails", "~> 5.2.4", ">= 5.2.4.2"
 
 # Make links from text
-gem 'rails_autolink', '~> 1.1'
+gem 'rails_autolink', '~> 1.1', '>= 1.1.6'
 
 # Default values for AR models
 gem "default_value_for", "~> 3.0.0"
@@ -21,8 +21,8 @@ gem "mysql2", group: :mysql
 gem "pg", group: :postgres
 
 # Auth
-gem "devise", '3.2.4'
-gem "devise-async", '0.9.0'
+gem "devise", "4.4.2"
+gem "devise-async", "1.0.0"
 gem 'omniauth', "~> 1.1.3"
 gem 'omniauth-google-oauth2'
 gem 'omniauth-twitter'
@@ -69,13 +69,13 @@ gem 'enumerize'
 gem "kaminari", "~> 0.15.1"
 
 # HAML
-gem "haml-rails"
+gem "haml-rails", ">= 0.5.3"
 
 # Files attachments
 gem "carrierwave"
 
 # Drag and Drop UI
-gem 'dropzonejs-rails'
+gem 'dropzonejs-rails', '>= 0.4.14'
 
 # for aws storage
 gem "fog", "~> 1.14"
@@ -137,7 +137,7 @@ gem "foreman"
 gem 'version_sorter'
 
 # Cache
-gem "redis-rails"
+gem "redis-rails", ">= 5.0.0"
 
 # Campfire integration
 gem 'tinder', '~> 1.9.2'
@@ -181,22 +181,22 @@ gem 'mousetrap-rails'
 # Detect and convert string character encoding
 gem 'charlock_holmes'
 
-gem "sass-rails", '~> 4.0.2'
-gem "coffee-rails"
+gem "sass-rails", "~> 5.0.5"
+gem "coffee-rails", ">= 4.2.2"
 gem "uglifier"
-gem 'turbolinks'
-gem 'jquery-turbolinks'
+gem 'turbolinks', '>= 2.0.0'
+gem 'jquery-turbolinks', '>= 2.0.1'
 
 gem 'select2-rails'
 gem 'jquery-atwho-rails', '~> 1.0.0'
-gem "jquery-rails"
-gem "jquery-ui-rails"
+gem "jquery-rails", ">= 4.0.1"
+gem "jquery-ui-rails", ">= 4.2.1"
 gem "jquery-scrollto-rails"
 gem "raphael-rails", "~> 2.1.2"
 gem 'bootstrap-sass', '~> 3.0'
-gem "font-awesome-rails", '~> 4.2'
+gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.4"
 gem "gitlab_emoji", "~> 0.1"
-gem "gon", '~> 5.0.0'
+gem "gon", "~> 5.0.1"
 gem 'nprogress-rails'
 gem 'request_store'
 gem "virtus"
@@ -224,14 +224,14 @@ end
 group :development, :test do
   gem 'coveralls', require: false
   gem 'rubocop', '0.28.0', require: false
-  gem 'spinach-rails'
-  gem "rspec-rails", '2.99'
+  gem 'spinach-rails', '>= 0.2.1'
+  gem "rspec-rails", "2.99.0"
   gem 'capybara', '~> 2.2.1'
   gem 'capybara-screenshot', '~> 1.0.0'
   gem "pry-rails"
   gem "awesome_print"
   gem "database_cleaner"
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.3.0'
 
   # Prevent occasions where minitest is not bundled in packaged versions of ruby (see #3826)
   gem 'minitest', '~> 5.3.0'
@@ -252,7 +252,7 @@ group :development, :test do
   gem 'poltergeist', '~> 1.5.1'
 
   gem 'jasmine', '~> 2.2.0'
-  gem 'jasmine-rails'
+  gem 'jasmine-rails', '>= 0.10.8'
 
   gem "spring", '~> 1.3.1'
   gem "spring-commands-rspec", '1.0.4'
