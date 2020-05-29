@@ -66,7 +66,7 @@ gem "stamp"
 gem 'enumerize'
 
 # Pagination
-gem "kaminari", "~> 0.15.1"
+gem "kaminari", "~> 1.2.1"
 
 # HAML
 gem "haml-rails"
